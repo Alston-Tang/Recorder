@@ -1,0 +1,10 @@
+version: "3"
+services:
+  recorder:
+    image: bililive/recorder
+    container_name: recorder
+    volumes:
+      - /mnt/storage/records:/rec
+    restart: unless-stopped
+    ports:
+      - "2356:2356"
