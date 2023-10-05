@@ -1,7 +1,7 @@
 version: "3"
 services:
   recorder:
-    image: bililive/recorder
+    image: bililive/recorder:latest
     container_name: recorder
     volumes:
       - /mnt/storage/records:/rec
