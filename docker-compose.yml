@@ -5,6 +5,8 @@ services:
     container_name: recorder
     volumes:
       - /mnt/storage/records:/rec
+    environment:
+      BREC_HTTP_OPEN_ACCESS: true
     restart: unless-stopped
     ports:
       - "2356:2356"
